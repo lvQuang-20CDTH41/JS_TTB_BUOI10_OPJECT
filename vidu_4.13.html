@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Lập trình hướng đối tượng
+        class Rectangle {
+            constructor (width = 5 , height = 10) {
+            this.width = width;
+            this.height = height;
+        }
+        getArea() {
+            var area = this.width * this.height
+            return area
+            }
+        }
+        var rect = new Rectangle(3, 5);
+        console.log("Height "+ rect.height);
+        console.log("Width "+ rect.width);
+        let area = rect.getArea();
+        console.log("Area "+ area );
+    </script>
+</body>
+</html>
